@@ -1,6 +1,6 @@
-let userName: string;
+let userName = "Max";
 
 
-userName=34;
+//userName=34;
 userName= "Max"
 
