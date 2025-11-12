@@ -62,3 +62,11 @@ creds = {
   password: "abc",
   email: "test@gmail.com"
 }
+
+class AuthCredentials implements Credentials {
+  email:string;
+  password: string;
+}
+
+function login(credentials: Credentials){}
+login(new AuthCredentials())
