@@ -70,3 +70,13 @@ class AuthCredentials implements Credentials {
 
 function login(credentials: Credentials){}
 login(new AuthCredentials())
+
+type Admin = {
+  permissions: string []
+};
+
+type AppUser = {
+  userName: string;
+}
+
+type AppAdmin = Admin & AppUser;
