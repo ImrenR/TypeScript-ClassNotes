@@ -80,3 +80,13 @@ type AppUser = {
 }
 
 type AppAdmin = Admin & AppUser;
+
+interface Adc {
+  permissions: string [];
+}
+
+interface AppUs {
+  userName: string;
+}
+
+interface AppAd extends Adc, AppUs {}
