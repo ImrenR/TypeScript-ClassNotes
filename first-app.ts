@@ -36,3 +36,9 @@ let hobbies: string[]; //same as above array of strings
 
 hobbies = ['Sports', 'Cooking', 'Reading'];
 // hobbies = [1,2,3]
+
+
+function add(a:number, b: number) {
+const result = a+ b;
+return result;
+}
