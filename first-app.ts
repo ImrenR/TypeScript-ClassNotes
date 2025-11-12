@@ -13,3 +13,15 @@ let isValid = true
 
 let userID: string | number = "abc1"
 userID = 123;
+
+
+let user: object;
+
+ 
+
+user={
+  name: "Max",
+  age: 34,
+  isAdmin: true,
+  id: "abc"
+}
