@@ -91,4 +91,13 @@ interface AppUs {
 
 interface AppAd extends Adc, AppUs {}
 
-let role: "admin" | " user" // this stores only either admin or user nothing else
+// let role: "admin" | " user" // this stores only either admin or user nothing else
+  
+
+
+
+  type Role = 'admin' | "user" | "editor";
+  let role: Role;
+
+  let roles: Array<Role>
+  roles=['admin','editor']
