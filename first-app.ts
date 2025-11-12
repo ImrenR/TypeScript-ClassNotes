@@ -11,3 +11,5 @@ let userAge = 34;
 let isValid = true
 // string, number , boolean mostly we will use those
 
+let userID: string | number = "abc1"
+userID = 123;
