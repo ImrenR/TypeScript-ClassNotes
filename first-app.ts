@@ -31,5 +31,8 @@ user={
 // let hobbies : Array<string>;
 let hobbies: string[]; //same as above array of strings
 
+
+//{namne:string; age:number}[]
+
 hobbies = ['Sports', 'Cooking', 'Reading'];
 // hobbies = [1,2,3]
