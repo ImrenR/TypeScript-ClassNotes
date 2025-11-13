@@ -64,8 +64,8 @@ creds = {
 }
 
 class AuthCredentials implements Credentials {
-  email:string;
-  password: string;
+  email!: string;
+  password!: string;
 }
 
 function login(credentials: Credentials){}
