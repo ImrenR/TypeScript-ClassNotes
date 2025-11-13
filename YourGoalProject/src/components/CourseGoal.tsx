@@ -1,8 +1,18 @@
 
+interface CourseGoalProps {
+  title: string;
+  description: string;
+}
 
-const CourseGoal = () => {
+const CourseGoal = ({title, description}: CourseGoalProps) => {
   return (
-    <div>CourseGoal</div>
+    <article>
+    <div>
+      <h2>{title}</h2>
+      <p>{description}</p>
+    </div>
+    <button>Delete</button>
+    </article>
   )
 }
 
