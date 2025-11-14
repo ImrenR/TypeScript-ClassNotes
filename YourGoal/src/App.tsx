@@ -4,7 +4,7 @@ import CourseGoal from "./components/CourseGoal"
 const App = () => {
   return (
     <div>
-      <CourseGoal/>
+      <CourseGoal title="LEARN REACT+TS" description="Learn it from the ground up" />
     </div>
   )
 }
