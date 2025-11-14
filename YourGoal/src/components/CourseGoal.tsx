@@ -1,15 +1,17 @@
-
 const CourseGoal = () => {
+
+
   return (
     <article>
-    <div>
-
-      <h2>Title</h2>
-      <p>description</p>
-    </div>
-    <button>Delete</button>
+      <div>
+        <h2>Title</h2>
+        <p>Description</p>
+      </div>
+      <button>Delete</button>
     </article>
-  )
-}
 
-export default CourseGoal
+
+  );
+};
+
+export default CourseGoal;
