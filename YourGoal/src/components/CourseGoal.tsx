@@ -34,7 +34,6 @@ const CourseGoal = ({ children, title }: CourseGoalProps) => {
           placeholder="Enter your goal"
           className="py-2 px-3 rounded-md border border-gray-300 bg-gray-50 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
         />
-        <button type="submit">Add Your goal</button>
       </div>
 
       <div>
