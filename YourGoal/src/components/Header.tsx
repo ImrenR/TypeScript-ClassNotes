@@ -1,12 +1,15 @@
 import type { FC, PropsWithChildren } from "react"
 
 
-type headerProps = PropsWithChildren<{image: string}>
+type HeaderProps = PropsWithChildren<{image:{src: string, alt: string}}>
 
 
-const Header : FC<headerProps> = ({image}) => {
+const Header : FC<HeaderProps> = ({children, image}) => {
   return (
-    <div>{image}</div>
+  <header >
+    <img {...image} className="w-16 h-16 rounded-full"/>
+    {children}
+  </header>
   )
 }
 
