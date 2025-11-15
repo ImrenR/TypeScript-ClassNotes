@@ -14,7 +14,9 @@ type WarningBoxProps = {
 
 type InfoBoxProps = HintBoxProps | WarningBoxProps;
 
-const InfoBox = ({mode, children, severity}: InfoBoxProps) => { //info, warning
+const InfoBox = (props: InfoBoxProps) => { //info, warning
+  const {children, mode}=props;
+
   if ( mode === 'hint') {
    return (
     <aside className="infobox infobox-hint">
@@ -24,7 +26,10 @@ const InfoBox = ({mode, children, severity}: InfoBoxProps) => { //info, warning
   ) ;
   }
   
-  
+  const {severity}=props;
+
+
+
   return (
     <aside className={`inforbox infobox-warning warning--${severity}`}>
       <h2>Warning</h2>
