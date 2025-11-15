@@ -14,12 +14,12 @@ const App = () => {
     const [goals, setGoals] = useState<CourseGoals[]>([]);
 
 
-  const handleYourGoal = () => {
+  const handleYourGoal = (goal:string, summary:string) => {
     setGoals((a) => {
       const newGoal: CourseGoals = {
         id: Math.random(),
-        title: "Learn React + TS",
-        description: "Learn it in depth",
+        title: goal,
+        description: summary,
       };
       return [...a, newGoal];
     });
@@ -38,7 +38,7 @@ setGoals(deleteOne)
       <Header image={{ src: goalsImg, alt: "A list of goals" }}>
         <h1>Your Course Goals</h1>
       </Header>
-      <NewGoal/>
+      <NewGoal onAddGoal={handleYourGoal}/>
      <CourseGoalList goals={goals} onDeleteGoal={deleteGoal}/>
 
     </div>

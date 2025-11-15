@@ -30,13 +30,7 @@ const CourseGoal = ({ children, title, onDelete, id }: CourseGoalProps) => {
         <div className="text-gray-500 text-sm">{children}</div>
 
         {/* Input */}
-        <input
-          id="title"
-          name="title"
-          type="text"
-          placeholder="Enter your goal"
-          className="py-2 px-3 rounded-md border border-gray-300 bg-gray-50 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-        />
+        
       </div>
 
       <div>
