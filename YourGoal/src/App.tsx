@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import goalsImg from "./assets/goals.jpg";
 import { useState } from "react";
-
+import CourseGoalList from "./components/CourseGoalList";
 
 interface CourseGoals {
   title: string;
@@ -11,6 +11,8 @@ interface CourseGoals {
 
 const App = () => {
     const [goals, setGoals] = useState<CourseGoals[]>([]);
+
+    
   const handleYourGoal = () => {
     setGoals((a) => {
       const newGoal: CourseGoals = {
@@ -28,7 +30,7 @@ const App = () => {
         <h1>Your Course Goals</h1>
       </Header>
       <button onClick={handleYourGoal}>Add Your Goal</button>
-     
+     <CourseGoalList goals={goals}/>
     </div>
   );
 };
