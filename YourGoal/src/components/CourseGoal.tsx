@@ -1,10 +1,12 @@
-const CourseGoal = ({
-  title,
-  description,
-}: {
-  title: string;
-  description: string;
-}) => {
+type CourGoalProps = {
+  title:string,
+  description: string,
+}
+
+
+
+
+const CourseGoal = ({title, description}: CourGoalProps) => {
   return (
     <div className="flex flex-col items-center  bg-gray-200">
       {/* Card container */}
