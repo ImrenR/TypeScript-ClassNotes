@@ -1,12 +1,13 @@
-type CourGoalProps = {
-  title:string,
-  description: string,
+import type { ReactNode } from "react";
+
+interface CourGoalProps {
+  children: ReactNode
 }
 
 
 
 
-const CourseGoal = ({title, description}: CourGoalProps) => {
+const CourseGoal = ({children}: CourGoalProps) => {
   return (
     <div className="flex flex-col items-center  bg-gray-200">
       {/* Card container */}
@@ -16,11 +17,9 @@ const CourseGoal = ({title, description}: CourGoalProps) => {
           htmlFor="title"
           className="text-sm font-medium text-gray-900"
         >
-          {title}
+          {children}
         </label>
-
-        {/* Description */}
-        <div className="text-gray-500 text-sm">{description}</div>
+       
 
         {/* Input */}
         <input
