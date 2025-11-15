@@ -6,7 +6,7 @@ const CourseGoal = ({
   description: string;
 }) => {
   return (
-    <div className="flex justify-center items-center mt-6 bg-gray-200">
+    <div className="flex justify-center items-center mt-12 bg-gray-200">
       {/* Card container */}
       <div className="bg-gray-100  rounded-lg p-6 w-full max-w-md flex flex-col gap-4">
         {/* Label */}
