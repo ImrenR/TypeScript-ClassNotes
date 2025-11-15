@@ -3,8 +3,8 @@ const NewGoal = () => {
 
 
 
-  const handleSubmit = ()=> {
-    
+  const handleSubmit = (e)=> {
+    e.preventDefault();
   }
   return (
    <form onSubmit={handleSubmit}>
