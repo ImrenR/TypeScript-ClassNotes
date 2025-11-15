@@ -8,7 +8,7 @@ const CourseGoal = ({title, description} : {title: string, description:string}) 
  
 
   return (
-  <div className='bg-gray-50'>
+  <div className='flex justify-center items-center min-h-screen'>
      <label htmlFor="price" className="block text-sm/6 font-medium text-gray-900">
         {title}
       </label>
