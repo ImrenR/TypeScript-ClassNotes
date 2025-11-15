@@ -9,6 +9,8 @@ import type { PropsWithChildren} from "react";
 
 type CourseGoalProps = PropsWithChildren<{title: string}>
 
+//! alternative way :
+//const CourseGoal : FC <CourseGoalProps> = ({children, title}) => { dont forget to import FC from react
 
 const CourseGoal = ({children, title}: CourseGoalProps) => {
   return (
