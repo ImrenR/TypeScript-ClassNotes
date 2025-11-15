@@ -1,5 +1,6 @@
 import CourseGoal from "./CourseGoal";
 import { type CourseGoals as CGoal} from '../App.tsx'
+import InfoBox from "./InfoBox.tsx";
 
 type CourseGoalListProps = {
  goals: CGoal[];
@@ -8,6 +9,9 @@ type CourseGoalListProps = {
 
 const CourseGoalList = ({goals, onDeleteGoal}: CourseGoalListProps) => {
 
+  if(goals.length===0){
+    return <InfoBox mode="hint"  >You have no course goals yet.</InfoBox>
+  }
 
 
   return (
