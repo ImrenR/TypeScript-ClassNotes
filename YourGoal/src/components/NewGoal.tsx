@@ -1,9 +1,10 @@
+import type { FormEvent } from "react";
 
 const NewGoal = () => {
 
 
 
-  const handleSubmit = (e)=> {
+  const handleSubmit = (e : FormEvent)=> {
     e.preventDefault();
   }
   return (
