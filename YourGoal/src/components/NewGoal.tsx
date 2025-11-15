@@ -8,7 +8,7 @@ const NewGoal = () => {
 
   const handleSubmit = (e : FormEvent<HTMLFormElement>)=> {
     e.preventDefault();
-
+  const enteredGoal=goal.current!.value
   }
   return (
    <form onSubmit={handleSubmit}>
