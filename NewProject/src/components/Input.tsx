@@ -1,9 +1,12 @@
+type InputProps = {
+  label: string;
+  text: string;
+}
 
-
-const Input = () => {
+const Input = ({props}: InputProps) => {
   return (
   <p>
-    <label htmlFor=""></label>
+    <label htmlFor="">TEXT</label>
     <input type="text" />
   </p>
   )
