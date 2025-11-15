@@ -8,7 +8,7 @@ function App() {
   return (
     <main>
     <Input id="name" label="Your name"></Input>
-      <Input id="name" label="Your name"></Input>
+      <Input id="age" label="Your age"></Input>
     </main>
   )
 }
