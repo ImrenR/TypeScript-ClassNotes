@@ -3,7 +3,7 @@ import type { ReactNode } from "react"
 
 type InfoBoxProps = {
   mode: "hint" | "warning";
-  severity: "low" | "medium" | "high";
+  severity?: "low" | "medium" | "high" ;
   children : ReactNode
 };
 
