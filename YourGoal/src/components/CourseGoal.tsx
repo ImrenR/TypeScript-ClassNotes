@@ -37,7 +37,7 @@ const CourseGoal = ({ children, title }: CourseGoalProps) => {
       </div>
 
       <div>
-        <button>DELETE</button>
+        <button onClick={}>DELETE</button>
       </div>
     </div>
     </form>

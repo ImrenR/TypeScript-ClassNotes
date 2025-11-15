@@ -24,6 +24,14 @@ const App = () => {
     });
   };
 
+const deleteGoal = (id:number)=> {
+  const deleteOne = (a: CourseGoals[]) => {
+    return a.filter((goals)=> goals.id !== id);
+  };
+setGoals(deleteOne)
+}
+ 
+
   return (
     <div>
       <Header image={{ src: goalsImg, alt: "A list of goals" }}>
@@ -31,6 +39,7 @@ const App = () => {
       </Header>
       <button onClick={handleYourGoal}>Add Your Goal</button>
      <CourseGoalList goals={goals}/>
+     
     </div>
   );
 };
