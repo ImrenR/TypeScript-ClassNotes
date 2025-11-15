@@ -2,8 +2,8 @@ import { useRef, type FormEvent } from "react";
 
 const NewGoal = () => {
 
- const goal = useRef();
- const summary = useRef();
+ const goal = useRef(null);
+ const summary = useRef(null);
 
 
   const handleSubmit = (e : FormEvent<HTMLFormElement>)=> {
