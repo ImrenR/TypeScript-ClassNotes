@@ -1,13 +1,16 @@
-import type { ReactNode } from "react";
+import type { PropsWithChildren} from "react";
 
-interface CourGoalProps {
-  children: ReactNode
-}
+// interface CourGoalProps {
+//   title: string
+//   children: ReactNode
+// }
+
+//! alternative way 2. : 
+
+type CourseGoalProps = PropsWithChildren<{title: string}>
 
 
-
-
-const CourseGoal = ({children}: CourGoalProps) => {
+const CourseGoal = ({children, title}: CourseGoalProps) => {
   return (
     <div className="flex flex-col items-center  bg-gray-200">
       {/* Card container */}
@@ -17,9 +20,11 @@ const CourseGoal = ({children}: CourGoalProps) => {
           htmlFor="title"
           className="text-sm font-medium text-gray-900"
         >
-          {children}
+          {title}
         </label>
-       
+
+        {/* Description */}
+        <div className="text-gray-500 text-sm">{children}</div>
 
         {/* Input */}
         <input
