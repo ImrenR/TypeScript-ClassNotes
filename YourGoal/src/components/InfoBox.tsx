@@ -1,13 +1,18 @@
 import type { ReactNode } from "react"
 
+type HintBoxProps = {
+  mode: 'hint';
+  children: ReactNode;
+}
 
-type InfoBoxProps = {
-  mode: "hint" | "warning";
-  severity?: "low" | "medium" | "high" ;
-  children : ReactNode
+
+type WarningBoxProps = {
+  mode:  "warning";
+  severity: "low" | "medium" | "high" ;
+  children : ReactNode;
 };
 
-
+type InfoBoxProps = HintBoxProps | WarningBoxProps;
 
 const InfoBox = ({mode, children, severity}: InfoBoxProps) => { //info, warning
   if ( mode === 'hint') {
