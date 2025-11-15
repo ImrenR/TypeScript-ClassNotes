@@ -6,9 +6,9 @@ const CourseGoal = ({
   description: string;
 }) => {
   return (
-    <div className="flex justify-center items-center mt-12 bg-gray-200">
+    <div className="flex flex-col items-center  bg-gray-200">
       {/* Card container */}
-      <div className="bg-gray-100  rounded-lg p-6 w-full max-w-md flex flex-col gap-4">
+      <div className="bg-gray-100 rounded-lg py-5 my-auto w-full max-w-md flex flex-col gap-4">
         {/* Label */}
         <label
           htmlFor="title"
@@ -28,6 +28,9 @@ const CourseGoal = ({
           placeholder="Enter your goal"
           className="py-2 px-3 rounded-md border border-gray-300 bg-gray-50 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
         />
+      </div>
+      <div>
+        <button>DELETE</button>
       </div>
     </div>
   );
