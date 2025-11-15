@@ -1,7 +1,32 @@
+import CourseGoal from "./CourseGoal";
 
-const CourseGoalList = () => {
+
+type CourseGoalListProps = {
+ goals: {
+  title: string;
+  description: string;
+  id: number;
+ }[]
+}
+
+const CourseGoalList = ({goals}: CourseGoalListProps) => {
+
+
+
   return (
-    <div>CourseGoalList</div>
+    <div>
+       <ul>
+      
+      {goals.map((c) => (
+        <li key={c.id}>
+          <CourseGoal title={c.title}>
+            <p>{c.description}</p>
+          </CourseGoal>
+        </li>
+        
+      ))}
+      </ul>
+    </div>
   )
 }
 
