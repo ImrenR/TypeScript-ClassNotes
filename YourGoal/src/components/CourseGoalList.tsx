@@ -1,12 +1,8 @@
 import CourseGoal from "./CourseGoal";
-
+import { type CourseGoals as CGoal} from '../App.tsx'
 
 type CourseGoalListProps = {
- goals: {
-  title: string;
-  description: string;
-  id: number;
- }[]
+ goals: CGoal[];
 }
 
 const CourseGoalList = ({goals}: CourseGoalListProps) => {
