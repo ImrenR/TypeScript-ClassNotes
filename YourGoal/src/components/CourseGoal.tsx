@@ -7,12 +7,15 @@ import { type PropsWithChildren } from "react";
 
 //! alternative way 2. :
 
-type CourseGoalProps = PropsWithChildren<{ title: string }>;
+type CourseGoalProps = PropsWithChildren<{ title: string;
+   onDelete : (id:number)=> void;
+  id:number;
+ }>;
 
 //! alternative way :
 //const CourseGoal : FC <CourseGoalProps> = ({children, title}) => { dont forget to import FC from react
 
-const CourseGoal = ({ children, title }: CourseGoalProps) => {
+const CourseGoal = ({ children, title, onDelete, id }: CourseGoalProps) => {
   return (
     <form action="">
     <div className="flex flex-col items-center  bg-gray-200">
@@ -37,7 +40,7 @@ const CourseGoal = ({ children, title }: CourseGoalProps) => {
       </div>
 
       <div>
-        <button onClick={}>DELETE</button>
+        <button onClick={()=>onDelete(id)}>DELETE</button>
       </div>
     </div>
     </form>

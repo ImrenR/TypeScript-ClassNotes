@@ -38,8 +38,8 @@ setGoals(deleteOne)
         <h1>Your Course Goals</h1>
       </Header>
       <button onClick={handleYourGoal}>Add Your Goal</button>
-     <CourseGoalList goals={goals}/>
-     
+     <CourseGoalList goals={goals} onDeleteGoal={deleteGoal}/>
+
     </div>
   );
 };
