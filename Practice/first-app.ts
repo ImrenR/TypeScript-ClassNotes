@@ -148,3 +148,4 @@ const settings:readonly[string,number]=["dark", 45]
  //! Unknown
  let veri2: unknown;
  veri2="Nasilsin"
+ console.log(typeof veri2)
