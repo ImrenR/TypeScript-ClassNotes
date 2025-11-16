@@ -177,3 +177,18 @@ function karsila(veri: string | number) {
     console.log("sonuc", veri*veri)
   }
 };
+
+//! Type Aliases
+// tip tanimlamasinda bir paket urun yapma gibi bir sey
+// type koduyla yapilir ya da interface ile
+//
+
+type name = string;
+
+let kullaniciAdi:name="zehra"
+
+type Props= {
+  name: string;
+  age: number;
+  occupation: string;
+}
