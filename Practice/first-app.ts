@@ -192,3 +192,13 @@ type Props= {
   age: number;
   occupation: string;
 }
+
+type kombine = string | boolean | number ; 
+let sifre:kombine=45;
+let yuio:kombine= "imren"
+
+//ya da 
+
+type Pet = "Dog" | "Cat" |"Bird" | "Cahs" | number
+let myPet: Pet= "Cat"
+let number:Pet= 34
