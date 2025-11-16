@@ -160,3 +160,10 @@ const settings:readonly[string,number]=["dark", 45]
  function selamla(isim:string): void {
   console.log(`Merhaba ${isim}`)
  }
+
+ //! Union turu (birlesim) js deki or yapisini dusunebiliriz
+ //number veya string olabilir anlaminda kullanilir "|" ile olur
+
+ let rt:number =34;
+
+ let say:number | string
