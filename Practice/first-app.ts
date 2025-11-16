@@ -202,3 +202,10 @@ let yuio:kombine= "imren"
 type Pet = "Dog" | "Cat" |"Bird" | "Cahs" | number
 let myPet: Pet= "Cat"
 let number:Pet= 34
+
+
+type secenekler= "Evet" | "Hayir" | "Belki"
+
+let cevap:secenekler
+
+cevap="Belki"
