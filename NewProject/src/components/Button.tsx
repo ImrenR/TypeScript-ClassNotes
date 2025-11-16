@@ -12,17 +12,17 @@ type AnchorProps = {
 
 const Button = (props: ButtonProps | AnchorProps) => {
   
-  const {el, ...otherProps} = props;
+
   
   
   if(props.el === 'anchor') {
-  return <a {...otherProps}></a>
+  return <a {...props}></a>
   }
   
 
 
 
-  return <button></button>
+  return <button {...props}></button>
 }
 
 export default Button
