@@ -209,3 +209,5 @@ type secenekler= "Evet" | "Hayir" | "Belki"
 let cevap:secenekler
 
 cevap="Belki"
+
+
