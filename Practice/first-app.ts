@@ -101,3 +101,7 @@ interface AppAd extends Adc, AppUs {}
 
   let roles: Array<Role>
   roles=['admin','editor']
+
+
+
+  let CodeList : number[] = [34,45,56] // Array types
