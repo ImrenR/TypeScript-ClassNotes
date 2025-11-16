@@ -7,8 +7,8 @@ function App() {
 
   return (
     <main>
-    <Input id="name" label="Your name"></Input>
-      <Input id="age" label="Your age"></Input>
+    <Input id="name" label="Your name" type="text"></Input>
+      <Input id="age" label="Your age" type="number"></Input>
     </main>
   )
 }
