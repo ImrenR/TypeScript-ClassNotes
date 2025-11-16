@@ -169,3 +169,11 @@ const settings:readonly[string,number]=["dark", 45]
  let say:number | string
  say=45;
  say="merhaba";
+
+function karsila(veri: string | number) {
+  if(typeof veri === "string"){
+    console.log("say hi", veri)
+  }else {
+    console.log("sonuc", veri*veri)
+  }
+}
