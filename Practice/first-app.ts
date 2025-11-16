@@ -105,3 +105,19 @@ interface AppAd extends Adc, AppUs {}
 
 
   let CodeList : number[] = [34,45,56] // Array types
+ 
+  //? Generic type arrays : 
+
+  let serialNumber: Array<number> = [2222344,53]
+
+  //? Tuple types allw you to express an array with a fixed number of elements whose types are known
+  //?  but need not be the same, 
+
+  //!tipleri belli bir array, sayisi sabit
+
+  let yu: [string, number, string]
+
+  yu= ["imren", 67, "tulin"]
+
+  
+ 
