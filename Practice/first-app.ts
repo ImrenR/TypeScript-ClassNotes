@@ -144,3 +144,7 @@ const settings:readonly[string,number]=["dark", 45]
 
  let h:any=45
  h="Merhaba"
+
+ //! Unknown
+ let veri2: unknown;
+ veri2="Nasilsin"
