@@ -16,13 +16,13 @@ const Button = (props: ButtonProps | AnchorProps) => {
   
   
   if(props.el === 'anchor') {
-  return <a {...props}></a>
+  return <a {...props} className="button"></a>
   }
   
 
 
 
-  return <button {...props}></button>
+  return <button {...props} className="button"></button>
 }
 
 export default Button
