@@ -176,4 +176,4 @@ function karsila(veri: string | number) {
   }else {
     console.log("sonuc", veri*veri)
   }
-}
+};
