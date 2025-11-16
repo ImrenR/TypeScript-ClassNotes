@@ -149,3 +149,11 @@ const settings:readonly[string,number]=["dark", 45]
  let veri2: unknown;
  veri2="Nasilsin"
  console.log(typeof veri2)
+
+ //! Void turu
+
+ // returnu olmayan bir veri turudur.
+
+ function selamla(isim:string): void {
+  console.log(`Merhaba ${isim}`)
+ }
