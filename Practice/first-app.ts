@@ -167,3 +167,5 @@ const settings:readonly[string,number]=["dark", 45]
  let rt:number =34;
 
  let say:number | string
+ say=45;
+ say="merhaba";
