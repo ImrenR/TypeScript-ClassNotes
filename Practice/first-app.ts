@@ -123,4 +123,8 @@ interface AppAd extends Adc, AppUs {}
 
   let car: [string, number]=["BMW",2023]
  let [brand,model]=car
- 
+
+ //? Tuple icindeki degerlerin degistirilmesini engellemek icin readonly kullanabiliriz:
+
+const settings:readonly[string,number]=["dark", 45]
+ settings=["light",2]
