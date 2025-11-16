@@ -119,5 +119,8 @@ interface AppAd extends Adc, AppUs {}
 
   yu= ["imren", 67, "tulin"]
 
-  
+  //! tuple icinde destruction
+
+  let car: [string, number]=["BMW",2023]
+ let [brand,model]=car
  
