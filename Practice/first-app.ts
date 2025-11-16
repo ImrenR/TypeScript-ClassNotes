@@ -128,3 +128,19 @@ interface AppAd extends Adc, AppUs {}
 
 const settings:readonly[string,number]=["dark", 45]
  settings=["light",2]
+
+ // Otomatik olarak numaralandiriliyorlar enum ile. 0 dan baslar
+ enum Color {
+  red,
+  green,
+  blue
+ }
+ let selectedColor : Color=Color.blue
+
+ //! ANY 
+ //Ts de en esnek veri turudur.
+ // TS tin siki tur denetimini devre disi birakir
+ // Onceden turu bilinmeyen veriler icin kullanilir
+
+ let h:any=45
+ h="Merhaba"
