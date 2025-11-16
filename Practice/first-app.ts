@@ -153,7 +153,10 @@ const settings:readonly[string,number]=["dark", 45]
  //! Void turu
 
  // returnu olmayan bir veri turudur.
-
+// void, bir fonksiyonun herhangi bir deger dondurmedigini belirtmek icin
+// kullanilan ozel bir turdur.
+// return kullanmazsin veya return" yazarsin bir deger dondurmezsin
+//genellikle clg, alert ve event handler vb de kullanilir
  function selamla(isim:string): void {
   console.log(`Merhaba ${isim}`)
  }
