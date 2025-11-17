@@ -7,3 +7,9 @@ function toplam(a, b) {
 }
 toplam(34, 56);
 //! 2. Istege bagli parametreler
+// Bazi parametlerede istege bagli olmasi icin ? kullanilir.
+// optional manasindadir.
+function selamla(msj, name, lastname) {
+    console.log(`${name}`);
+}
+selamla("Merhaba", "Omer");

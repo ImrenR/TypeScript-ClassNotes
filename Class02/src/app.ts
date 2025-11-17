@@ -11,3 +11,10 @@ toplam(34,56)
 
 //! 2. Istege bagli parametreler
 
+// Bazi parametlerede istege bagli olmasi icin ? kullanilir.
+// optional manasindadir.
+
+function selamla(msj:string, name:string, lastname?:string):void{
+  console.log(`${name}`)
+}
+selamla("Merhaba", "Omer")
