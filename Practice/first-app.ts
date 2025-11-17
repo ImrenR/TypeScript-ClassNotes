@@ -127,7 +127,7 @@ interface AppAd extends Adc, AppUs {}
  //? Tuple icindeki degerlerin degistirilmesini engellemek icin readonly kullanabiliriz:
 
 const settings:readonly[string,number]=["dark", 45]
- settings=["light",2]
+//  settings=["light",2]
 
  // Otomatik olarak numaralandiriliyorlar enum ile. 0 dan baslar
  enum Color {

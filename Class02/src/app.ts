@@ -1,6 +1,6 @@
 //Fonksiyonlar 
 
-//! Fonksiyonu void olarak tanimlama
+//! 1. Fonksiyonu void olarak tanimlama
 
 function toplam(a:number, b:number):void{
   console.log(a+b)
@@ -8,3 +8,6 @@ function toplam(a:number, b:number):void{
 }
 
 toplam(34,56)
+
+//! 2. Istege bagli parametreler
+
