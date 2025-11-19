@@ -17,4 +17,4 @@ toplam(34,56)
 function selamla(msj:string, name:string, lastname?:string):void{
   console.log(`${name}`)
 }
-selamla("Merhaba", "Omer")
+selamla("Merhaba", "Omer");
