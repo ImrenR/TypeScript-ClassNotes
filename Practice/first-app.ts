@@ -142,7 +142,7 @@ const settings:readonly[string,number]=["dark", 45]
  // TS tin siki tur denetimini devre disi birakir
  // Onceden turu bilinmeyen veriler icin kullanilir
 
- let h:any=45
+ let h:any=45;
  h="Merhaba"
 
  //! Unknown
