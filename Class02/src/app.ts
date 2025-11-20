@@ -14,7 +14,10 @@ toplam(34,56);
 // Bazi parametlerede istege bagli olmasi icin ? kullanilir.
 // optional manasindadir..
 
-function selamla(msj:string, name:string, lastname?:string):void{
+function selamla(msj:string,
+   name:string, 
+   lastname?:string):void
+   {
   console.log(`${name}`)
 }
 selamla("Merhaba", "Omer");
